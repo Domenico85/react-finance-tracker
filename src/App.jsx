@@ -9,11 +9,13 @@ function App() {
   return (
     <Router>
       <Navbar />
-      <div className="content container mt-4">
-        <Routes>
-          <Route path="/" element={<Dashboard />} />
-          <Route path="/transactions" element={<Transactions />} />
-        </Routes>
+      <div className="center-container">
+        <div className="container">
+          <Routes>
+            <Route path="/" element={<Dashboard />} />
+            <Route path="/transactions" element={<Transactions />} />
+          </Routes>
+        </div>
       </div>
     </Router>
   );
